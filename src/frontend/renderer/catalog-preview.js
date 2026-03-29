@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
       transmission: "Автомат",
       fuel: "Бензин",
       price: "від $52,000",
-      image: "../images/c-class.jpg"
+      image: "../images/c-class.avif"
     }
   ];
 
