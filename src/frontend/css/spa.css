@@ -1,0 +1,33 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-main {
+  flex: 1;
+}
+
+.site-footer {
+  margin-top: auto;
+}
+
+.site-main-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.spa-page {
+  display: none;
+  min-height: 500px;
+}
+
+.spa-page.spa-page-active {
+  display: block;
+}
