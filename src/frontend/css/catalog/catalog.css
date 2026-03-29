@@ -1,0 +1,46 @@
+.catalog-page {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.catalog-page-header {
+  max-width: 760px;
+  margin: 0 auto 32px;
+}
+
+.catalog-page-label {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: #98a2b3;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.catalog-page-title {
+  margin: 0 0 16px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.catalog-page-text {
+  margin: 0;
+  color: #d0d5dd;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.catalog-page-category-buttons {
+  margin-top: 32px;
+  margin-bottom: 36px;
+}
+
+.catalog-page-cars-wrapper {
+  margin-top: 8px;
+}
