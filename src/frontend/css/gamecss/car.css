@@ -1,0 +1,14 @@
+
+.player-car-sprite {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    width: 180px;
+    height: auto;
+    z-index: 20;
+    pointer-events: none;
+    image-rendering: pixelated;
+    user-select: none;
+    display: block;
+  }

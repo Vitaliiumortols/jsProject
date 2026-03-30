@@ -1,0 +1,36 @@
+/* Стандартные стили сайта (светлые) */
+body {
+    background-color: #ffffff;
+    color: #333;
+    font-family: Arial, sans-serif;
+    transition: all 0.5s ease; /* Плавный переход */
+}
+
+header { background: #f8f8f8; border-bottom: 1px solid #ddd; }
+
+/* --- RETRO MODE (активируется при игре) --- */
+body.retro-mode {
+    background-color: #050510;
+    color: #ffffff;
+    background-image: 
+        linear-gradient(rgba(184, 108, 255, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(184, 108, 255, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+}
+
+body.retro-mode header {
+    background: rgba(10, 10, 25, 0.9);
+    border-bottom: 2px solid #b86cff;
+    box-shadow: 0 0 15px #b86cff;
+}
+
+body.retro-mode .logo, body.retro-mode nav a {
+    color: #ff00ff !important;
+    text-shadow: 0 0 10px #ff00ff;
+}
+
+/* Стили для игрового контейнера внутри ретро-режима */
+body.retro-mode .road-demo {
+    box-shadow: 0 0 50px rgba(184, 108, 255, 0.6);
+    border: 2px solid #b86cff;
+}

@@ -21,6 +21,10 @@
  <link rel="stylesheet" href="css/catalog/catalog.css" />
 <link rel="stylesheet" href="css/catalog/catalog-category.css" />
 <link rel="stylesheet" href="css/catalog/catalog-car.css" />
+<link rel="stylesheet" href="css/gamecss/road.css" />
+<link rel="stylesheet" href="css/gamecss/car.css" />
+<link rel="stylesheet" href="css/gamecss/page.css" />
+
 </head>
 <body>
 
@@ -356,19 +360,10 @@
 
       <!-- GAME -->
       <section id="spa-page-game" class="spa-page game-page">
-        <div class="game-page-header text-center">
-          <span class="game-page-label">Гра</span>
-          <h1 class="game-page-title">Аркадна гра </h1>
-          <p class="game-page-text">
-            ------------
-          </p>
-        </div>
-
-        <div class="game-page-shell">
-          <div class="game-page-placeholder">
-            <p class="game-page-placeholder-text">Місце для гри</p>
+          <div class="road-demo">
+            <canvas id="roadCanvas" width="900" height="560"></canvas>
+            <img id="playerCar" class="player-car-sprite" src="../images/carImages/gt_frame_0.png" alt="Player car">
           </div>
-        </div>
       </section>
 
     </div>
@@ -412,6 +407,9 @@
 <script src="renderer/category-renderer.js"></script>
 <script src="renderer/car-renderer.js"></script>
 <script src="renderer/catalog-preview.js"></script>
+<script src="renderer/game/road.js"></script>
+<script src="renderer/game/car.js"></script>
+
 </body>
 </html>
 

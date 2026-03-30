@@ -5,6 +5,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const navCollapse = document.getElementById("siteHeaderMenu");
 
   function showPage(pageName) {
+    
+    if (pageName === 'game') {
+      document.body.classList.add("retro-mode");
+    } else {
+      document.body.classList.remove("retro-mode");
+      if (typeof isGameStarted !== 'undefined') isGameStarted = false;
+    }
+
     pages.forEach((page) => {
       page.classList.remove("spa-page-active");
     });
