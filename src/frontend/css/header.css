@@ -1,1 +1,110 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background: rgba(248, 250, 252, 0.88);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(17, 24, 39, 0.06);
+}
 
+.site-header-navbar {
+  padding: 0;
+}
+
+.site-header-brand {
+  color: #111827;
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.site-header-brand:hover {
+  color: #111827;
+}
+
+.site-header-nav {
+  gap: 10px;
+}
+
+.site-header-nav-link {
+  position: relative;
+  padding: 10px 14px !important;
+  color: #374151;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  border-radius: 12px;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.site-header-nav-link:hover {
+  color: #111827;
+  background-color: rgba(17, 24, 39, 0.05);
+}
+
+.site-header-nav-link.active {
+  color: #111827;
+  background-color: rgba(17, 24, 39, 0.08);
+}
+
+.site-header-info {
+  padding: 12px 18px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background-color: #ffffff;
+  color: #111827;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.06);
+}
+
+.site-header-toggler {
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 8px 10px;
+  background-color: #ffffff;
+  box-shadow: none !important;
+}
+
+.site-header-toggler:focus {
+  box-shadow: 0 0 0 3px rgba(17, 24, 39, 0.08) !important;
+}
+
+.site-header-toggler-icon {
+  background-image: none;
+  width: 22px;
+  height: 2px;
+  background-color: #111827;
+  position: relative;
+  display: inline-block;
+  border-radius: 999px;
+}
+
+.site-header-toggler-icon::before,
+.site-header-toggler-icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 22px;
+  height: 2px;
+  background-color: #111827;
+  border-radius: 999px;
+}
+
+.site-header-toggler-icon::before {
+  top: -7px;
+}
+
+.site-header-toggler-icon::after {
+  top: 7px;
+}
