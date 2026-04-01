@@ -144,7 +144,7 @@
       </section>
 
       <!-- CATALOG -->
-      <section id="spa-page-catalog" class="spa-page catalog-page">
+     <section id="spa-page-catalog" class="spa-page catalog-page">
   <div class="catalog-page-header text-center">
     <span class="catalog-page-label">Каталог</span>
     <h1 class="catalog-page-title">Каталог Mercedes-Benz</h1>
@@ -153,100 +153,105 @@
     </p>
   </div>
 
-  <div class="catalog-filters-block">
-    <div class="catalog-filters-row row g-3">
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="catalog-filter-item">
-          <label class="catalog-filter-label" for="filter-price-from">Ціна від</label>
-          <input
-            id="filter-price-from"
-            type="number"
-            class="catalog-filter-input"
-            placeholder="Наприклад, 30000"
-          />
-        </div>
-      </div>
+  <div class="catalog-page-layout row g-4">
+    <div class="col-12 col-lg-3">
+      <aside class="catalog-filters-block">
+        <div class="catalog-filters-row row g-3">
+          <div class="col-12">
+            <div class="catalog-filter-item">
+              <label class="catalog-filter-label" for="filter-price-from">Ціна від</label>
+              <input
+                id="filter-price-from"
+                type="number"
+                class="catalog-filter-input"
+                placeholder="Наприклад, 30000"
+              />
+            </div>
+          </div>
 
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="catalog-filter-item">
-          <label class="catalog-filter-label" for="filter-price-to">Ціна до</label>
-          <input
-            id="filter-price-to"
-            type="number"
-            class="catalog-filter-input"
-            placeholder="Наприклад, 100000"
-          />
-        </div>
-      </div>
+          <div class="col-12">
+            <div class="catalog-filter-item">
+              <label class="catalog-filter-label" for="filter-price-to">Ціна до</label>
+              <input
+                id="filter-price-to"
+                type="number"
+                class="catalog-filter-input"
+                placeholder="Наприклад, 100000"
+              />
+            </div>
+          </div>
 
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="catalog-filter-item">
-          <label class="catalog-filter-label" for="filter-fuel">Паливо</label>
-          <select id="filter-fuel" class="catalog-filter-select">
-            <option>Усі варіанти</option>
-            <option>Бензин</option>
-            <option>Дизель</option>
-            <option>Гібрид</option>
-            <option>Електро</option>
-          </select>
-        </div>
-      </div>
+          <div class="col-12">
+            <div class="catalog-filter-item">
+              <label class="catalog-filter-label" for="filter-fuel">Паливо</label>
+              <select id="filter-fuel" class="catalog-filter-select">
+                <option>Усі варіанти</option>
+                <option>Бензин</option>
+                <option>Дизель</option>
+                <option>Гібрид</option>
+                <option>Електро</option>
+              </select>
+            </div>
+          </div>
 
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="catalog-filter-item">
-          <label class="catalog-filter-label" for="filter-transmission">Коробка</label>
-          <select id="filter-transmission" class="catalog-filter-select">
-            <option>Усі варіанти</option>
-            <option>Автомат</option>
-            <option>Механіка</option>
-          </select>
-        </div>
-      </div>
+          <div class="col-12">
+            <div class="catalog-filter-item">
+              <label class="catalog-filter-label" for="filter-transmission">Коробка</label>
+              <select id="filter-transmission" class="catalog-filter-select">
+                <option>Усі варіанти</option>
+                <option>Автомат</option>
+                <option>Механіка</option>
+              </select>
+            </div>
+          </div>
 
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="catalog-filter-item">
-          <label class="catalog-filter-label" for="filter-year">Рік</label>
-          <select id="filter-year" class="catalog-filter-select">
-            <option>Будь-який</option>
-            <option>2024</option>
-            <option>2023</option>
-            <option>2022</option>
-            <option>2021</option>
-          </select>
-        </div>
-      </div>
+          <div class="col-12">
+            <div class="catalog-filter-item">
+              <label class="catalog-filter-label" for="filter-year">Рік</label>
+              <select id="filter-year" class="catalog-filter-select">
+                <option>Будь-який</option>
+                <option>2024</option>
+                <option>2023</option>
+                <option>2022</option>
+                <option>2021</option>
+              </select>
+            </div>
+          </div>
 
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="catalog-filter-item">
-          <label class="catalog-filter-label" for="filter-sort">Сортування</label>
-          <select id="filter-sort" class="catalog-filter-select">
-            <option>За замовчуванням</option>
-            <option>Спочатку дешевші</option>
-            <option>Спочатку дорожчі</option>
-            <option>Новіші</option>
-          </select>
-        </div>
-      </div>
+          <div class="col-12">
+            <div class="catalog-filter-item">
+              <label class="catalog-filter-label" for="filter-sort">Сортування</label>
+              <select id="filter-sort" class="catalog-filter-select">
+                <option>За замовчуванням</option>
+                <option>Спочатку дешевші</option>
+                <option>Спочатку дорожчі</option>
+                <option>Новіші</option>
+              </select>
+            </div>
+          </div>
 
-      <div class="col-12 col-lg-6">
-        <div class="catalog-filter-actions">
-          <button type="button" class="catalog-filter-apply-button">Застосувати</button>
-          <button type="button" class="catalog-filter-reset-button">Скинути</button>
+          <div class="col-12">
+            <div class="catalog-filter-actions">
+              <button type="button" class="catalog-filter-apply-button">Застосувати</button>
+              <button type="button" class="catalog-filter-reset-button">Скинути</button>
+            </div>
+          </div>
         </div>
+      </aside>
+    </div>
+
+    <div class="col-12 col-lg-9">
+      <div
+        class="catalog-page-category-buttons d-flex flex-wrap gap-3"
+        id="catalog-page-category-container"
+      ></div>
+
+      <div class="catalog-page-cars-wrapper">
+        <div class="row g-4" id="catalog-page-cars-container"></div>
       </div>
     </div>
   </div>
-
-  <div
-    class="catalog-page-category-buttons d-flex flex-wrap justify-content-center gap-3"
-    id="catalog-page-category-container"
-  ></div>
-
-  <div class="catalog-page-cars-wrapper">
-    <div class="row g-4" id="catalog-page-cars-container"></div>
-  </div>
 </section>
-
       <!-- CATEGORY TEMPLATE -->
       <template id="catalog-page-category-template">
         <button
