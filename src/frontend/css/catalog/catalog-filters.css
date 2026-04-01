@@ -1,4 +1,6 @@
 .catalog-filters-block {
+  position: sticky;
+  top: 24px;
   padding: 22px;
   border: 1px solid #e5e7eb;
   border-radius: 24px;
@@ -81,4 +83,8 @@
 
 .catalog-filter-reset-button:hover {
   background-color: #f3f4f6;
+}
+
+.catalog-page-layout {
+  align-items: flex-start;
 }
