@@ -1,15 +1,14 @@
 .catalog-page-category-button {
-  min-width: 170px;
-  padding: 14px 24px;
-  border: 1px solid #2d3138;
-  border-radius: 16px;
-  background-color: #11151b;
-  color: #ffffff;
+  min-width: 180px;
+  padding: 15px 26px;
+  border: 1px solid #d9dee5;
+  border-radius: 18px;
+  background-color: #f3f4f6;
+  color: #111827;
   font-family: "Inter", sans-serif;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
   line-height: 1.2;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
   transition:
     background-color 0.3s ease,
     border-color 0.3s ease,
@@ -19,31 +18,28 @@
 }
 
 .catalog-page-category-button:hover {
-  background-color: #1a2028;
-  border-color: #5d6673;
-  color: #ffffff;
+  background-color: #ffffff;
+  border-color: #bfc7d2;
   transform: translateY(-2px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.08);
 }
 
 .catalog-page-category-button:focus {
   outline: none;
-  box-shadow:
-    0 0 0 3px rgba(255, 255, 255, 0.08),
-    0 12px 24px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 0 0 3px rgba(17, 24, 39, 0.08);
 }
 
 .catalog-page-category-button-active {
-  background-color: #f5f7fa;
-  border-color: #f5f7fa;
-  color: #11151b;
-  box-shadow: 0 12px 26px rgba(255, 255, 255, 0.12);
+  background-color: #111827;
+  border-color: #111827;
+  color: #ffffff;
+  box-shadow: 0 12px 24px rgba(17, 24, 39, 0.18);
 }
 
 .catalog-page-category-button-active:hover {
-  background-color: #ffffff;
-  border-color: #ffffff;
-  color: #11151b;
+  background-color: #1f2937;
+  border-color: #1f2937;
+  color: #ffffff;
 }
 
 .catalog-page-category-button-text {
