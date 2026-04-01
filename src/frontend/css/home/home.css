@@ -1,0 +1,99 @@
+.home-page {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.home-page-banner {
+  padding: 56px;
+  border-radius: 32px;
+  background:
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.08), transparent 30%),
+    linear-gradient(135deg, #0f172a 0%, #111827 45%, #1f2937 100%);
+  overflow: hidden;
+  box-shadow: 0 24px 48px rgba(15, 23, 42, 0.18);
+}
+
+.home-page-content {
+  max-width: 560px;
+}
+
+.home-page-label {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #cbd5e1;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.home-page-title {
+  margin: 0 0 18px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.home-page-text {
+  margin: 0 0 28px;
+  color: #d1d5db;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.home-page-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.home-page-primary-button,
+.home-page-secondary-button {
+  padding: 14px 22px;
+  border-radius: 16px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.home-page-primary-button {
+  background-color: #ffffff;
+  color: #111827;
+  border: none;
+}
+
+.home-page-primary-button:hover {
+  background-color: #f3f4f6;
+  color: #111827;
+  transform: translateY(-2px);
+}
+
+.home-page-secondary-button {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.home-page-secondary-button:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.home-page-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-page-image {
+  max-width: 100%;
+  width: 620px;
+  object-fit: contain;
+  filter: drop-shadow(0 22px 40px rgba(0, 0, 0, 0.28));
+}
