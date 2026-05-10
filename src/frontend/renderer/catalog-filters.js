@@ -8,7 +8,7 @@ window.getFilteredCars = function () {
   const yearSelect = document.getElementById("filter-year");
   const sortSelect = document.getElementById("filter-sort");
 
-  let cars = state.data.cars.filter(car => car.category === state.activeCategory);
+  let cars = state.data.cars;
 
   const minPrice = Number(minPriceInput?.value) || 0;
   const maxPrice = Number(maxPriceInput?.value) || Infinity;
@@ -17,11 +17,15 @@ window.getFilteredCars = function () {
   const transmissionValue = transmissionSelect?.value || "Усі варіанти";
   const yearValue = yearSelect?.value || "Будь-який";
   const sortValue = sortSelect?.value || "За замовчуванням";
+  const searchValue = state.searchValue.trim().toLowerCase();
 
   cars = cars.filter(car => {
-    const matchesSearch = car.title
-      .toLowerCase()
-      .includes(state.searchValue.toLowerCase());
+    const matchesSearch =
+      searchValue === "" ||
+      car.title.toLowerCase().includes(searchValue);
+
+    const matchesCategory =
+      searchValue !== "" || car.category === state.activeCategory;
 
     const matchesMinPrice = car.priceNumber >= minPrice;
     const matchesMaxPrice = car.priceNumber <= maxPrice;
@@ -31,6 +35,7 @@ window.getFilteredCars = function () {
 
     return (
       matchesSearch &&
+      matchesCategory &&
       matchesMinPrice &&
       matchesMaxPrice &&
       matchesFuel &&
@@ -83,6 +88,16 @@ window.setupCatalogSearch = function () {
       window.renderCatalog();
     }
   });
+
+  searchInput.addEventListener("keydown", event => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+
+      if (window.renderCatalog) {
+        window.renderCatalog();
+      }
+    }
+  });
 };
 
 window.setupCatalogFilters = function () {
@@ -96,22 +111,36 @@ window.setupCatalogFilters = function () {
   const applyButton = document.querySelector(".catalog-filter-apply-button");
   const resetButton = document.querySelector(".catalog-filter-reset-button");
 
+  function applyFilters() {
+    const currentScroll = window.scrollY;
+
+    if (window.renderCatalog) {
+      window.renderCatalog();
+    }
+
+    window.scrollTo({
+      top: currentScroll,
+      behavior: "auto"
+    });
+  }
+
   if (applyButton) {
     applyButton.addEventListener("click", event => {
       event.preventDefault();
-
-      const currentScroll = window.scrollY;
-
-      if (window.renderCatalog) {
-        window.renderCatalog();
-      }
-
-      window.scrollTo({
-        top: currentScroll,
-        behavior: "auto"
-      });
+      applyFilters();
     });
   }
+
+  [minPriceInput, maxPriceInput, fuelSelect, transmissionSelect, yearSelect, sortSelect].forEach(element => {
+    if (!element) return;
+
+    element.addEventListener("keydown", event => {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        applyFilters();
+      }
+    });
+  });
 
   if (resetButton) {
     resetButton.addEventListener("click", event => {
