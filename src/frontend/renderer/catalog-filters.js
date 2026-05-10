@@ -8,7 +8,7 @@ window.getFilteredCars = function () {
   const yearSelect = document.getElementById("filter-year");
   const sortSelect = document.getElementById("filter-sort");
 
-  let cars = state.data.cars;
+  let cars = state.data.cars.filter(car => car.category === state.activeCategory);
 
   const minPrice = Number(minPriceInput?.value) || 0;
   const maxPrice = Number(maxPriceInput?.value) || Infinity;
@@ -24,9 +24,6 @@ window.getFilteredCars = function () {
       searchValue === "" ||
       car.title.toLowerCase().includes(searchValue);
 
-    const matchesCategory =
-      searchValue !== "" || car.category === state.activeCategory;
-
     const matchesMinPrice = car.priceNumber >= minPrice;
     const matchesMaxPrice = car.priceNumber <= maxPrice;
     const matchesFuel = fuelValue === "Усі варіанти" || car.fuel === fuelValue;
@@ -35,7 +32,6 @@ window.getFilteredCars = function () {
 
     return (
       matchesSearch &&
-      matchesCategory &&
       matchesMinPrice &&
       matchesMaxPrice &&
       matchesFuel &&
@@ -82,7 +78,19 @@ window.setupCatalogSearch = function () {
   const searchInput = document.getElementById("catalog-search-input");
 
   searchInput.addEventListener("input", event => {
-    window.catalogState.searchValue = event.target.value.trim();
+    const searchText = event.target.value.trim();
+
+    window.catalogState.searchValue = searchText;
+
+    if (searchText !== "") {
+      const foundCar = window.catalogState.data.cars.find(car =>
+        car.title.toLowerCase().includes(searchText.toLowerCase())
+      );
+
+      if (foundCar) {
+        window.catalogState.activeCategory = foundCar.category;
+      }
+    }
 
     if (window.renderCatalog) {
       window.renderCatalog();
