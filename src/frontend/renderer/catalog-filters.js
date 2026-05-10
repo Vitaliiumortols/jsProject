@@ -1,4 +1,4 @@
-window.getFilteredCars = function () {
+ window.getFilteredCars = function () {
   const state = window.catalogState;
 
   const minPriceInput = document.getElementById("filter-price-from");
