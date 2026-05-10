@@ -6,6 +6,8 @@ window.setupContactForm = function () {
 
   if (!form) return;
 
+  showLastContactRequest();
+
   form.addEventListener("submit", event => {
     event.preventDefault();
 
@@ -50,6 +52,7 @@ window.setupContactForm = function () {
     localStorage.setItem(STORAGE_NAME_KEY, name);
 
     showGreeting(name);
+    showLastContactRequest();
 
     statusMessage.textContent = "Дякуємо! Ваше звернення успішно збережено.";
     statusMessage.style.color = "green";
@@ -64,6 +67,46 @@ function saveContactRequest(contactRequest) {
   savedRequests.push(contactRequest);
 
   localStorage.setItem(STORAGE_CONTACTS_KEY, JSON.stringify(savedRequests));
+}
+
+function getLastContactRequest() {
+  const savedRequests = JSON.parse(localStorage.getItem(STORAGE_CONTACTS_KEY)) || [];
+
+  if (savedRequests.length === 0) {
+    return null;
+  }
+
+  return savedRequests[savedRequests.length - 1];
+}
+
+function showLastContactRequest() {
+  const formCard = document.querySelector(".contacts-page-form-card");
+
+  if (!formCard) return;
+
+  const lastRequest = getLastContactRequest();
+
+  let lastRequestBlock = document.getElementById("last-contact-request");
+
+  if (!lastRequestBlock) {
+    lastRequestBlock = document.createElement("div");
+    lastRequestBlock.id = "last-contact-request";
+    formCard.appendChild(lastRequestBlock);
+  }
+
+  if (!lastRequest) {
+    lastRequestBlock.innerHTML = "";
+    return;
+  }
+
+  lastRequestBlock.innerHTML = `
+    <h4>Останнє звернення</h4>
+    <p><strong>Ім’я:</strong> ${lastRequest.name}</p>
+    <p><strong>Телефон:</strong> ${lastRequest.phone}</p>
+    <p><strong>Email:</strong> ${lastRequest.email}</p>
+    <p><strong>Повідомлення:</strong> ${lastRequest.message}</p>
+    <p><strong>Дата:</strong> ${lastRequest.date}</p>
+  `;
 }
 
 function getOrCreateContactMessage(form) {
@@ -94,10 +137,10 @@ function showGreeting(name) {
     greeting = document.createElement("div");
     greeting.id = "user-greeting-message";
 
-    const headerContainer = document.querySelector(".site-header .container");
+    const headerMenu = document.querySelector(".site-header-collapse");
 
-    if (headerContainer) {
-      headerContainer.appendChild(greeting);
+    if (headerMenu) {
+      headerMenu.appendChild(greeting);
     }
   }
 
