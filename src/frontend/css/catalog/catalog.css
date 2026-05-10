@@ -44,3 +44,73 @@
 .catalog-page-cars-wrapper {
   margin-top: 12px;
 }
+.catalog-search-wrapper {
+  max-width: 520px;
+  margin: 0 auto 30px auto;
+}
+
+.catalog-search-input {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid #d1d5db;
+  border-radius: 14px;
+  font-size: 16px;
+  outline: none;
+}
+
+.catalog-search-input:focus {
+  border-color: #111827;
+}
+
+#user-greeting-message {
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+#car-details-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+#car-details-modal.car-details-modal-active {
+  display: flex;
+}
+
+.car-details-modal-window {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  padding: 30px;
+  border-radius: 22px;
+  background: #ffffff;
+  color: #111827;
+}
+
+.car-details-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  border: none;
+  background: transparent;
+  font-size: 34px;
+  cursor: pointer;
+}
+
+.car-details-modal-title {
+  margin-bottom: 12px;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.car-details-modal-text {
+  margin-bottom: 16px;
+  color: #4b5563;
+}

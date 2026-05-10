@@ -1,0 +1,145 @@
+{
+  "categories": [
+    { "id": "sedans", "title": "Седани" },
+    { "id": "suv", "title": "Позашляховики" },
+    { "id": "coupe", "title": "Купе" },
+    { "id": "electric", "title": "Електромобілі" }
+  ],
+  "cars": [
+    {
+      "category": "sedans",
+      "categoryTitle": "Седани",
+      "title": "Mercedes C-Class",
+      "text": "Комфортний седан для міста та щоденних поїздок.",
+      "year": "2024",
+      "transmission": "Автомат",
+      "fuel": "Бензин",
+      "price": "від $52,000",
+      "priceNumber": 52000,
+      "image": "../images/c-class.avif"
+    },
+    {
+      "category": "sedans",
+      "categoryTitle": "Седани",
+      "title": "Mercedes E-Class",
+      "text": "Бізнес-седан із високим рівнем комфорту.",
+      "year": "2024",
+      "transmission": "Автомат",
+      "fuel": "Дизель",
+      "price": "від $67,000",
+      "priceNumber": 67000,
+      "image": "../images/e-class.avif"
+    },
+    {
+      "category": "sedans",
+      "categoryTitle": "Седани",
+      "title": "Mercedes S-Class",
+      "text": "Преміальний седан представницького класу.",
+      "year": "2024",
+      "transmission": "Автомат",
+      "fuel": "Бензин",
+      "price": "від $118,000",
+      "priceNumber": 118000,
+      "image": "../images/s-class.avif"
+    },
+    {
+      "category": "sedans",
+      "categoryTitle": "Седани",
+      "title": "Mercedes Maybach S-Class",
+      "text": "Максимальний рівень розкоші та комфорту.",
+      "year": "2024",
+      "transmission": "Автомат",
+      "fuel": "Бензин",
+      "price": "від $190,000",
+      "priceNumber": 190000,
+      "image": "../images/maybach_s-class.avif"
+    },
+
+    {
+      "category": "suv",
+      "categoryTitle": "Позашляховики",
+      "title": "Mercedes G-Class",
+      "text": "Легендарний позашляховик із потужним характером.",
+      "year": "2024",
+      "transmission": "Автомат",
+      "fuel": "Бензин",
+      "price": "від $143,000",
+      "priceNumber": 143000,
+      "image": "../images/g-class.avif"
+    },
+    {
+      "category": "suv",
+      "categoryTitle": "Позашляховики",
+      "title": "Mercedes GLS",
+      "text": "Великий преміальний SUV для сімейних подорожей.",
+      "year": "2024",
+      "transmission": "Автомат",
+      "fuel": "Дизель",
+      "price": "від $98,000",
+      "priceNumber": 98000,
+      "image": "../images/gls.avif"
+    },
+    {
+      "category": "suv",
+      "categoryTitle": "Позашляховики",
+      "title": "Mercedes EQS SUV",
+      "text": "Електричний SUV з преміальним комфортом.",
+      "year": "2024",
+      "transmission": "Автомат",
+      "fuel": "Електро",
+      "price": "від $112,000",
+      "priceNumber": 112000,
+      "image": "../images/eqs-suv.avif"
+    },
+
+    {
+      "category": "coupe",
+      "categoryTitle": "Купе",
+      "title": "Mercedes GLE Coupe",
+      "text": "Купе-кросовер із динамічним дизайном.",
+      "year": "2024",
+      "transmission": "Автомат",
+      "fuel": "Бензин",
+      "price": "від $89,000",
+      "priceNumber": 89000,
+      "image": "../images/gle-coupe.avif"
+    },
+    {
+      "category": "coupe",
+      "categoryTitle": "Купе",
+      "title": "Mercedes Maybach",
+      "text": "Преміальна модель із вишуканим оформленням.",
+      "year": "2024",
+      "transmission": "Автомат",
+      "fuel": "Бензин",
+      "price": "від $185,000",
+      "priceNumber": 185000,
+      "image": "../images/maybach.avif"
+    },
+
+    {
+      "category": "electric",
+      "categoryTitle": "Електромобілі",
+      "title": "Mercedes EQE",
+      "text": "Електричний седан бізнес-класу.",
+      "year": "2024",
+      "transmission": "Автомат",
+      "fuel": "Електро",
+      "price": "від $78,000",
+      "priceNumber": 78000,
+      "image": "../images/eqe.avif"
+    },
+    {
+      "category": "electric",
+      "categoryTitle": "Електромобілі",
+      "title": "Mercedes EQS",
+      "text": "Флагманський електромобіль із великим запасом ходу.",
+      "year": "2024",
+      "transmission": "Автомат",
+      "fuel": "Електро",
+      "price": "від $105,000",
+      "priceNumber": 105000,
+      "image": "../images/eqs.avif"
+    }
+  ]
+}
