@@ -1,0 +1,243 @@
+.promo-spring-page {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
+.promo-spring-page-banner {
+  margin-bottom: 42px;
+  padding: 42px;
+  border-radius: 32px;
+  background:
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.08), transparent 30%),
+    linear-gradient(135deg, #0f172a 0%, #111827 50%, #1f2937 100%);
+  box-shadow: 0 24px 48px rgba(15, 23, 42, 0.16);
+  overflow: hidden;
+}
+
+.promo-spring-page-banner-label {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: #cbd5e1;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.promo-spring-page-banner-title {
+  margin: 0 0 18px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.promo-spring-page-banner-text {
+  margin: 0 0 24px;
+  color: #d1d5db;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 620px;
+}
+
+.promo-spring-page-banner-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+}
+
+.promo-spring-page-banner-button {
+  padding: 13px 22px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  color: #111827;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.promo-spring-page-banner-button:hover {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.promo-spring-page-banner-link {
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.promo-spring-page-banner-link:hover {
+  color: #e5e7eb;
+}
+
+.promo-spring-page-banner-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo-spring-page-banner-image {
+  width: 100%;
+  max-width: 520px;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 38px rgba(0, 0, 0, 0.24));
+}
+
+.promo-spring-page-header {
+  max-width: 760px;
+  margin: 0 auto 30px;
+}
+
+.promo-spring-page-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #6b7280;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.promo-spring-page-title {
+  margin: 0 0 14px;
+  color: #111827;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.promo-spring-page-text {
+  margin: 0;
+  color: #4b5563;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.promo-spring-page-car-card {
+  position: relative;
+  height: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promo-spring-page-car-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 42px rgba(15, 23, 42, 0.14);
+}
+
+.promo-spring-page-car-badge {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 2;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background-color: #b91c1c;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.promo-spring-page-car-image-box {
+  height: 240px;
+  padding: 24px;
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo-spring-page-car-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.promo-spring-page-car-content {
+  padding: 24px;
+}
+
+.promo-spring-page-car-category {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background-color: #111827;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.promo-spring-page-car-title {
+  margin: 0 0 12px;
+  color: #111827;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.promo-spring-page-car-description {
+  margin: 0 0 18px;
+  color: #475467;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.promo-spring-page-car-prices {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.promo-spring-page-car-old-price {
+  color: #98a2b3;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+.promo-spring-page-car-new-price {
+  color: #111827;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.promo-spring-page-car-button {
+  padding: 11px 18px;
+  border-radius: 14px;
+  background-color: #111827;
+  color: #ffffff;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.promo-spring-page-car-button:hover {
+  background-color: #1f2937;
+  color: #ffffff;
+}
