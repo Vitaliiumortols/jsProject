@@ -8,7 +8,15 @@ window.renderCatalogCategories = function (categories, activeCategory) {
 
   categoryContainer.innerHTML = "";
 
-  categories.forEach((category) => {
+  const allCategories = [
+    {
+      id: "all",
+      title: "Всі категорії"
+    },
+    ...categories
+  ];
+
+  allCategories.forEach((category) => {
     const clone = categoryTemplate.content.cloneNode(true);
     const button = clone.querySelector(".catalog-page-category-button");
     const text = clone.querySelector(".catalog-page-category-button-text");

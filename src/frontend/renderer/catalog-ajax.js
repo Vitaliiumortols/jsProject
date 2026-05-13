@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       window.catalogState.data = data;
-      window.catalogState.activeCategory = data.categories[0].id;
+      window.catalogState.activeCategory = "all";
 
       renderCatalog();
       setupCategoryEvents();

@@ -8,9 +8,7 @@ window.renderCatalogCars = function (cars, activeCategory) {
 
   carsContainer.innerHTML = "";
 
-  const filteredCars = cars.filter((car) => car.category === activeCategory);
-
-  filteredCars.forEach((car) => {
+  cars.forEach((car) => {
     const clone = carTemplate.content.cloneNode(true);
 
     const image = clone.querySelector(".catalog-page-car-image");

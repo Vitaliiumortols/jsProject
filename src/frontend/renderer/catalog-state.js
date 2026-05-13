@@ -3,6 +3,6 @@ window.catalogState = {
     categories: [],
     cars: []
   },
-  activeCategory: "",
+  activeCategory: "all",
   searchValue: ""
 };

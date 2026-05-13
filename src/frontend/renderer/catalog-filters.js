@@ -1,4 +1,4 @@
- window.getFilteredCars = function () {
+window.getFilteredCars = function () {
   const state = window.catalogState;
 
   const minPriceInput = document.getElementById("filter-price-from");
@@ -8,7 +8,13 @@
   const yearSelect = document.getElementById("filter-year");
   const sortSelect = document.getElementById("filter-sort");
 
-  let cars = state.data.cars.filter(car => car.category === state.activeCategory);
+  let cars;
+
+  if (state.activeCategory === "all") {
+    cars = [...state.data.cars];
+  } else {
+    cars = state.data.cars.filter(car => car.category === state.activeCategory);
+  }
 
   const minPrice = Number(minPriceInput?.value) || 0;
   const maxPrice = Number(maxPriceInput?.value) || Infinity;
