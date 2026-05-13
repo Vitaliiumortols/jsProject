@@ -1,0 +1,263 @@
+.promo-credit-page {
+  padding-top: 24px;
+  padding-bottom: 32px;
+  background-image:
+    linear-gradient(rgba(248, 250, 252, 0.82), rgba(248, 250, 252, 0.9)),
+    url("../../images/credit-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 32px;
+}
+
+.promo-credit-page-overlay {
+  padding: 18px;
+}
+
+.promo-credit-page-banner {
+  margin-bottom: 40px;
+  padding: 42px;
+  border-radius: 32px;
+  background:
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.08), transparent 30%),
+    linear-gradient(135deg, rgba(15, 23, 42, 0.96) 0%, rgba(17, 24, 39, 0.94) 50%, rgba(31, 41, 55, 0.92) 100%);
+  box-shadow: 0 24px 48px rgba(15, 23, 42, 0.16);
+  overflow: hidden;
+}
+
+.promo-credit-page-banner-label {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: #cbd5e1;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.promo-credit-page-banner-title {
+  margin: 0 0 18px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.promo-credit-page-banner-text {
+  margin: 0 0 24px;
+  color: #d1d5db;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 620px;
+}
+
+.promo-credit-page-banner-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+}
+
+.promo-credit-page-banner-button {
+  padding: 13px 22px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  color: #111827;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.promo-credit-page-banner-button:hover {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.promo-credit-page-banner-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.promo-credit-page-banner-link:hover {
+  color: #e5e7eb;
+}
+
+.promo-credit-page-banner-card {
+  padding: 28px;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+}
+
+.promo-credit-page-banner-card-item + .promo-credit-page-banner-card-item {
+  margin-top: 18px;
+}
+
+.promo-credit-page-banner-card-label {
+  display: block;
+  margin-bottom: 6px;
+  color: #cbd5e1;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.promo-credit-page-banner-card-value {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.promo-credit-page-content {
+  padding: 0 6px;
+}
+
+.promo-credit-page-header {
+  max-width: 760px;
+  margin: 0 auto 30px;
+}
+
+.promo-credit-page-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #475467;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.promo-credit-page-title {
+  margin: 0 0 14px;
+  color: #111827;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.promo-credit-page-text {
+  margin: 0;
+  color: #4b5563;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.promo-credit-page-condition-card {
+  height: 100%;
+  padding: 24px;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(229, 231, 235, 0.9);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(6px);
+}
+
+.promo-credit-page-condition-title {
+  margin: 0 0 10px;
+  color: #111827;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.promo-credit-page-condition-value {
+  margin: 0 0 12px;
+  color: #111827;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.promo-credit-page-condition-text {
+  margin: 0;
+  color: #475467;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.promo-credit-page-example-card {
+  margin-top: 34px;
+  padding: 28px;
+  border-radius: 26px;
+  background-color: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(229, 231, 235, 0.92);
+  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(6px);
+}
+
+.promo-credit-page-example-label {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #6b7280;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.promo-credit-page-example-title {
+  margin: 0 0 22px;
+  color: #111827;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.promo-credit-page-example-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.promo-credit-page-example-item {
+  padding: 18px;
+  border-radius: 18px;
+  background-color: #f8fafc;
+  border: 1px solid #e5e7eb;
+}
+
+.promo-credit-page-example-item-accent {
+  grid-column: span 2;
+  background-color: #111827;
+  border-color: #111827;
+}
+
+.promo-credit-page-example-name {
+  display: block;
+  margin-bottom: 8px;
+  color: #6b7280;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.promo-credit-page-example-item-accent .promo-credit-page-example-name {
+  color: #cbd5e1;
+}
+
+.promo-credit-page-example-value {
+  color: #111827;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.promo-credit-page-example-item-accent .promo-credit-page-example-value {
+  color: #ffffff;
+}
