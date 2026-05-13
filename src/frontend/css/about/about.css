@@ -1,0 +1,167 @@
+.about-page {
+  position: relative;
+  padding-top: 36px;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+.about-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(15, 23, 42, 0.06), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(17, 24, 39, 0.08), transparent 30%);
+  pointer-events: none;
+}
+
+.about-page .row {
+  position: relative;
+  z-index: 1;
+}
+
+.about-page-image-wrapper {
+  position: relative;
+  min-height: 640px;
+  border-radius: 32px;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, #0f172a 0%, #111827 45%, #1f2937 100%);
+  box-shadow: 0 24px 54px rgba(15, 23, 42, 0.18);
+}
+
+.about-page-image-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.08), transparent 26%),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0));
+  z-index: 1;
+}
+
+.about-page-image-wrapper::after {
+  content: "Mercedes Showroom";
+  position: absolute;
+  left: 28px;
+  bottom: 26px;
+  z-index: 2;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.about-page-image {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 640px;
+  object-fit: cover;
+  display: block;
+  filter: saturate(1.05) contrast(1.03);
+}
+
+.about-page-content {
+  position: relative;
+  padding: 38px 34px;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(229, 231, 235, 0.9);
+  box-shadow: 0 24px 54px rgba(15, 23, 42, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.about-page-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 34px;
+  width: 82px;
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #111827 0%, #374151 100%);
+}
+
+.about-page-label {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: #6b7280;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.about-page-title {
+  margin: 0 0 20px;
+  color: #111827;
+  font-family: "Montserrat", sans-serif;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 1.06;
+  letter-spacing: -0.03em;
+}
+
+.about-page-text {
+  margin: 0 0 18px;
+  color: #374151;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.about-page-text:last-of-type {
+  margin-bottom: 28px;
+}
+
+.about-page-feature-card {
+  position: relative;
+  height: 100%;
+  padding: 22px 20px 22px 22px;
+  border-radius: 22px;
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.06);
+  color: #111827;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.45;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.about-page-feature-card::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #111827;
+  box-shadow: 0 0 0 6px rgba(17, 24, 39, 0.08);
+}
+
+.about-page-feature-card {
+  padding-left: 42px;
+}
+
+.about-page-feature-card:hover {
+  transform: translateY(-5px);
+  border-color: #d4d8df;
+  box-shadow: 0 20px 36px rgba(15, 23, 42, 0.1);
+}
