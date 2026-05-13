@@ -265,3 +265,109 @@
 .contacts-page-last-item strong {
   color: #111827;
 }
+
+/* compact contacts page */
+.site-main-container {
+  padding-top: 12px;
+  padding-bottom: 24px;
+}
+
+.contacts-page {
+  padding-top: 6px;
+  padding-bottom: 24px;
+}
+
+.contacts-page-header {
+  margin: 0 auto 22px;
+}
+
+.contacts-page-label {
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+.contacts-page-title {
+  margin: 0 0 10px;
+  font-size: 40px;
+  line-height: 1.08;
+}
+
+.contacts-page-text {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.contacts-page-info-card,
+.contacts-page-form-card {
+  padding: 22px;
+  border-radius: 24px;
+}
+
+.contacts-page-info-card::before,
+.contacts-page-form-card::before {
+  left: 22px;
+  width: 64px;
+}
+
+.contacts-page-info-title,
+.contacts-page-form-title {
+  margin: 0 0 16px;
+  font-size: 24px;
+}
+
+.contacts-page-info-item {
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.contacts-page-input {
+  min-height: 48px;
+  font-size: 14px;
+  border-radius: 14px;
+}
+
+.contacts-page-textarea {
+  min-height: 120px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.contacts-page-form {
+  margin-bottom: 14px;
+}
+
+.contacts-page-submit-button {
+  min-width: 150px;
+  height: 46px;
+  font-size: 14px;
+  border-radius: 14px;
+}
+
+.contacts-page-success-message {
+  margin-top: 12px;
+  padding: 12px 14px;
+  font-size: 14px;
+  border-radius: 14px;
+}
+
+.contacts-page-last-card {
+  margin-top: 16px;
+  padding: 18px;
+  border-radius: 18px;
+}
+
+.contacts-page-last-title {
+  margin: 0 0 12px;
+  font-size: 20px;
+}
+
+.contacts-page-last-item {
+  margin-bottom: 7px;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.site-footer {
+  margin-top: 28px;
+}
