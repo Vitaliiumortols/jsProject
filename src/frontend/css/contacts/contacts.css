@@ -1,8 +1,6 @@
 .contacts-page {
-  position: relative;
-  padding-top: 32px;
-  padding-bottom: 40px;
-  overflow: hidden;
+  padding-top: 8px;
+  padding-bottom: 32px;
 }
 
 .contacts-page::before {
@@ -16,11 +14,10 @@
 }
 
 .contacts-page-header {
-  position: relative;
-  z-index: 1;
-  max-width: 860px;
-  margin: 0 auto 34px;
+  margin: 0 auto 24px;
 }
+
+
 
 .contacts-page-label {
   display: inline-block;
