@@ -1,0 +1,29 @@
+.site-footer {
+  margin-top: 56px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-top: 1px solid rgba(17, 24, 39, 0.08);
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(10px);
+}
+
+.site-footer-block {
+  height: 100%;
+}
+
+.site-footer-title {
+  margin: 0 0 14px;
+  color: #111827;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.site-footer-text {
+  margin: 0;
+  color: #374151;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  line-height: 1.75;
+}
