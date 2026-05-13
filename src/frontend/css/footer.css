@@ -27,3 +27,32 @@
   font-size: 15px;
   line-height: 1.75;
 }
+
+/* transparent footer only on game page */
+body:has(#spa-page-game.spa-page-active) {
+  background-color: #030513;
+  background-image:
+    linear-gradient(rgba(129, 61, 255, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(129, 61, 255, 0.12) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+body:has(#spa-page-game.spa-page-active) .site-main-container {
+  padding-bottom: 0;
+}
+
+body:has(#spa-page-game.spa-page-active) .site-footer {
+  margin-top: 0;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  background: transparent;
+  border-top: 1px solid rgba(255, 0, 255, 0.22);
+  backdrop-filter: none;
+  box-shadow: none;
+}
+
+body:has(#spa-page-game.spa-page-active) .site-footer-title,
+body:has(#spa-page-game.spa-page-active) .site-footer-text {
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(255, 0, 255, 0.18);
+}
