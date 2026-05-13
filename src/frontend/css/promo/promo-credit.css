@@ -1,16 +1,31 @@
 .promo-credit-page {
+  position: relative;
   padding-top: 24px;
   padding-bottom: 32px;
-  background-image:
-    linear-gradient(rgba(248, 250, 252, 0.82), rgba(248, 250, 252, 0.9)),
-    url("../../images/background.jpg");
+  border-radius: 32px;
+  overflow: hidden;
+  background-image: url("../../images/credit-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 32px;
+}
+
+.promo-credit-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(15, 23, 42, 0.58) 0%,
+    rgba(15, 23, 42, 0.38) 45%,
+    rgba(15, 23, 42, 0.52) 100%
+  );
+  z-index: 0;
 }
 
 .promo-credit-page-overlay {
+  position: relative;
+  z-index: 1;
   padding: 18px;
 }
 
